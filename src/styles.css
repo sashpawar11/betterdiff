@@ -1,0 +1,50 @@
+body {
+    top:0 ;
+    left: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1c1306;
+    font-family: 'Space Mono';
+}
+
+.header {
+    width: 100%;
+    background-color: #b49a1a;
+    height: fit-content;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.header span {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+.main-content-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px;
+    gap: 100px;
+}
+.inputarea{
+    height: 50vh;
+    width: 50vh;
+    border: 1px solid #e0d92f;
+    color:#f3f7ca;
+    padding: 20px;
+}
+.unifiedoutputbox{
+    height: fit-content;
+    width:110vh;
+    border: 1px solid #e0d92f;
+    color:#f3f7ca;
+    padding: 20px;
+}
+
+.del {
+    background-color: red;
+}
+.add {
+    background-color: greenyellow;
+}
+/* UI Colors: https://uicolors.app/generate/1c1306 */
