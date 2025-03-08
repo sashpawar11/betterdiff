@@ -21,11 +21,33 @@
             <label for="fileA">File A:</label>
             <input type="file" id="inputFileA" class="fileinputs"><br><br>
             <label for="fileA">File B:</label>
-            <input type="file" id="inputFileB" class="fileinputs">
+            <input type="file" id="inputFileB" class="fileinputs"><br><br>
+            <button id="btnDiff">Generate Unified Diff</button>
+
         </div>
         <div class="unifiedoutputbox">
-            <div class="unifieddiff">
+            <table>
+                <tbody id="unifieddiff">
+                    <tr>
+                        <th colspan="2">Line#</th>
+                        <th colspan="6">Content</th>
+                      </tr>
+                    <!-- <tr>
+                        <td colspan="1">1:</td>
+                        <td colspan="3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores incidunt sunt facilis exercitationem? Obcaecati quos voluptate sint eum non, commodi sit officia soluta quisquam, expedita reiciendis neque digniss</td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td colspan="1">2:</td>
+                        <td colspan="3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores incidunt sunt facilis exercitationem? Obcaecati quos voluptate sint eum non, commodi sit officia soluta quisquam, expedita reiciendis neque digniss</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <!-- <div id="unifieddiff-linenumber">
+                
             </div>
+            <div id="unifieddiff-content">
+               
+            </div> -->
         </div>
     </div>
 

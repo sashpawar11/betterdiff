@@ -34,17 +34,26 @@ body {
     padding: 20px;
 }
 .unifiedoutputbox{
-    height: fit-content;
+    display: grid;
+    height: 80vh;
     width:110vh;
     border: 1px solid #e0d92f;
     color:#f3f7ca;
     padding: 20px;
+    background-color: black;
+    overflow-y: scroll;
 }
+
 
 .del {
     background-color: red;
 }
 .add {
-    background-color: greenyellow;
+    background-color: #008b15;
+}
+.unifieddiff tr {
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
 }
 /* UI Colors: https://uicolors.app/generate/1c1306 */
