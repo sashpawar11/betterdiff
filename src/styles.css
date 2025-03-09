@@ -15,6 +15,11 @@ body {
     color: white;
 }
 
+input[type=file] {
+    border: 2px solid black;
+    color: #b49a1a;
+}
+
 .header span {
     font-size: 2rem;
     margin-left: 20px;
@@ -32,6 +37,7 @@ body {
     border: 1px solid #e0d92f;
     color:#f3f7ca;
     padding: 20px;
+    margin-top: 10%;
 }
 .unifiedoutputbox{
     display: grid;
@@ -55,5 +61,26 @@ body {
     display:flex;
     flex-direction:row;
     align-items:flex-start;
+}
+
+#btnDiff {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e0d92f;
+    color: black;
+    transition: color  0.2s ,background-color  0.2s;
+    transition-timing-function: linear;
+    font-weight: 600;
+}
+
+
+#btnDiff:hover {
+    border: 1px solid #e0d92f;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    color: #e0d92f;
+    
 }
 /* UI Colors: https://uicolors.app/generate/1c1306 */

@@ -51,6 +51,10 @@ btnDiff.onclick = () =>  { generateDiff() };
 
 
 function generateDiff() {
+    if (contentA.length == 0 | contentB.length == 0) {
+        alert('Error uploading files, please retry');
+        return;
+    }
     splitToLines();
     generateUnifiedDiffMap()
     renderUnifiedDiffDOM();
@@ -101,6 +105,11 @@ function generateUnifiedDiffMap() {
             addCount++;
         }       
     })
+    if (linesFileB.length > linesFileA.length) {
+        for (let i = linesFileA.length - 1; i < linesFileB.length; i++){
+            unifiedDiffMap.set(`${i}-A`, linesFileB[i])
+        }
+    }
 
     console.log(unifiedDiffMap);
 }
