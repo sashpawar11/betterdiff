@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
     background-color: #1c1306;
     font-family: 'Space Mono';
+    width: 100%;
 }
 
 .header {
@@ -27,7 +28,6 @@ input[type=file] {
 .main-content-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
     margin: 20px;
     gap: 100px;
 }
